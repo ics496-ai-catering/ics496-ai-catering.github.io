@@ -1,0 +1,64 @@
+---
+title: Project Kick-off
+date: 2024-01-23
+categories: [weekly_meeting]
+tags: []
+---
+
+### Project Overview: AI-Based Catering Service Matching System
+
+We are developing an intelligent AI-powered platform that matches clients with the best catering services for their events. Whether you're planning a wedding, corporate gathering, or social celebration, this system will consider your unique requirements, preferences, and constraints to recommend the ideal catering options.
+
+### Key Features:
+
+#### 1. **Intelligent Event Profiling**
+   - **Event Type Classification**: Identifying the type of event (wedding, corporate, social, etc.)
+   - **Guest Count & Demographics**: Gathering information on the number of guests and their specific needs.
+   - **Venue Compatibility**: Matching the caterer to the event's location and its space constraints.
+   - **Budget Optimization**: Ensuring the selected catering services fit within the user’s budget.
+   - **Dietary Requirements Handling**: Accommodating any dietary restrictions (e.g., gluten-free, vegan, etc.)
+
+#### 2. **Recommendation Engine**
+   - **Machine Learning-Based Matching**: Using historical data and machine learning to provide the best match between clients and caterers.
+   - **Historical Event Success Scoring**: Leveraging past event data to score and recommend based on success rates.
+   - **Seasonal Menu Optimization**: Suggesting menus that are in season for better freshness and cost-effectiveness.
+   - **Dietary Restriction Compatibility Scoring**: Matching menus that align with specific dietary needs (e.g., gluten-free, vegan).
+   - **Adventurousness**: Assessing whether the client is open to trying new or exotic dishes. This could potentially be left to the caterers to provide.
+   - **Kitchen Constraints**: Ensuring the catering service can meet specific kitchen or time constraints.
+   - **Presentation/Serving Recommendations**: Offering suggestions on how to serve or present food to enhance the event experience.
+
+#### 3. **User Interface**
+   - **Event Requirement Questionnaire**: Gathering detailed information about the event (e.g., number of guests, servers, type of event).
+   - **Interactive Budget Calculator**: Letting users input their budget and adjust to see what they can afford based on their preferences.
+     - For example: "You have $15 per person; here are some options that fit within your budget." Users can tweak the selection and see how the budget changes.
+   - **Menu Preview and Customization**: Allowing users to preview available menu items and customize them.
+   - **Real-Time Availability Checking**: Ensuring caterers are available for the event date and time.
+   - **Automated Proposal Generation**: Automatically generating a proposal based on the client's inputs, showcasing caterers, menus, and costs.
+
+### System Integration
+
+The platform will be integrated into the existing catering app [catering.daspot.net](https://catering.daspot.net/), leveraging historical data and expert input for model training. 
+
+There will also be an upselling feature where clients will be encouraged to explore additional offerings that are commonly purchased with the selected menu items.
+
+### Next Steps: Actionables & User Stories
+
+1. **Create Initial User Stories**:
+   - **Scenario 1**: A client unsure of what they want but open to suggestions. They will go through a guided process with questions to discover the best options.
+   - **Scenario 2**: A client with a clear idea of what they want but is looking for alternatives or recommendations.
+   - **Scenario 3**: A client with very specific requirements (e.g., dietary restrictions, budget constraints). The system will provide suggestions that fit within these limitations.
+   - *Roadmap created on [GitHub](https://github.com/orgs/ics496-ai-catering/projects/1), which will be updated regularly throughout the project.*
+
+2. **Identify Necessary Data and Tech Stack**:
+   - What data will be required to fuel the recommendation engine (e.g., client preferences, historical event data, caterer availability)?
+     - Acquire a copy of the relevant tables in the database that could be used for the recommendation engine.
+     - An UML diagram of the entire database could also be helpful in identifying the data that could be utilized.
+     - *Note: We do not want direct access to their database servers, a clone without PII would be preferred.*
+   - What tech stack do we need for integration with the current website?
+     - Otherwise, a separate website will be developed with NextJS.
+
+3. **User Interface Considerations**:
+   - Do we want a chatbot, form, or both for gathering user preferences?
+     - We believe a form would be better for gathering all required event details in a simple, structured way.
+     - We could create a basic survey and ask some people around school to see what they prefer.
+   - What will the interface look like for each user story (e.g., for Scenario 1, how do we make the discovery process easy and engaging)?
